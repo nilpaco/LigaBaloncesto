@@ -16,4 +16,6 @@ public interface JugadorRepository extends PagingAndSortingRepository<Jugador, L
     public List<Jugador> findByPosicionLike(String posicion);
     public List<Jugador> findByFechaNacimientoLessThan(Date fechaNacimiento);
     public List<Jugador> findByNombreContainingAndFechaNacimientoLessThan(String nombre, Date fechaNacimiento);
+    public Jugador findByNombre(String nombre);
+
 }

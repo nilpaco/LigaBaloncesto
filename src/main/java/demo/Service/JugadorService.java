@@ -34,6 +34,7 @@ public class JugadorService {
         jugador1.setRebotes(49);
         jugadorRepository.save(jugador1);
 
+
         Jugador jugador2 = new Jugador();
         jugador2.setNombre("Juan Carlos Navarro");
         Calendar cal2=Calendar.getInstance();

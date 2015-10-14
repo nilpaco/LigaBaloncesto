@@ -25,6 +25,17 @@ public class Jugador {
 
     private String posicion;
 
+    @ManyToOne
+    private Equipo equipo;
+
+    public Equipo getEquipo() {
+        return equipo;
+    }
+
+    public void setEquipo(Equipo equipo) {
+        this.equipo = equipo;
+    }
+
     public Long getId() {
         return id;
     }
@@ -93,4 +104,5 @@ public class Jugador {
                 ", posicion='" + posicion + '\'' +
                 '}';
     }
+
 }
