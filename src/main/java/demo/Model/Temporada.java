@@ -1,6 +1,8 @@
 package demo.Model;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by nilpanescoll on 14/10/15.
@@ -15,6 +17,10 @@ public class Temporada {
 
     @ManyToOne
     private Liga liga;
+
+    @ManyToMany
+    private Set<Equipo> equipos = new HashSet<>();
+
 
     public Long getId() {
         return id;
@@ -38,6 +44,14 @@ public class Temporada {
 
     public void setLiga(Liga liga) {
         this.liga = liga;
+    }
+
+    public Set<Equipo> getEquipos() {
+        return equipos;
+    }
+
+    public void setEquipos(Set<Equipo> equipos) {
+        this.equipos = equipos;
     }
 
     @Override

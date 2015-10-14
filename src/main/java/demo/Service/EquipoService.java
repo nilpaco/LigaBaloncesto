@@ -36,9 +36,7 @@ public class EquipoService {
         equipoRepository.save(equipo1);
 
         Jugador jugador = jugadorRepository.findByNombre("Kostas Papanikolaou");
-
         jugador.setEquipo(equipo1);
-
         jugadorRepository.save(jugador);
 
 

@@ -25,6 +25,9 @@ public class Equipo {
     @OneToMany (mappedBy = "equipo")
     private Set<Jugador> jugadores = new HashSet<>();
 
+    @ManyToMany (mappedBy = "equipos")
+    private Set<Temporada> temporadas = new HashSet<>();
+
     public Long getId() {
         return id;
     }
@@ -63,6 +66,14 @@ public class Equipo {
 
     public void setJugadores(Set<Jugador> jugadores) {
         this.jugadores = jugadores;
+    }
+
+    public Set<Temporada> getTemporadas() {
+        return temporadas;
+    }
+
+    public void setTemporadas(Set<Temporada> temporadas) {
+        this.temporadas = temporadas;
     }
 
     @Override
