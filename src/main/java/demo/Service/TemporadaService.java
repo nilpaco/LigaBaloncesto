@@ -19,7 +19,8 @@ public class TemporadaService {
 
     public void crearTemporada(){
         Temporada temporada1 = new Temporada();
-        temporada1.setNombre("Temporada 15/16");
+        temporada1.setNombre("Temporada ACB 15/16");
+        temporadaRepository.save(temporada1);
     }
 
 }

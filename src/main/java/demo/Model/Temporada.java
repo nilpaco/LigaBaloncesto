@@ -14,7 +14,7 @@ public class Temporada {
     private String nombre;
 
     @ManyToOne
-    private Temporada temporada;
+    private Liga liga;
 
     public Long getId() {
         return id;
@@ -32,12 +32,12 @@ public class Temporada {
         this.nombre = nombre;
     }
 
-    public Temporada getTemporada() {
-        return temporada;
+    public Liga getLiga() {
+        return liga;
     }
 
-    public void setTemporada(Temporada temporada) {
-        this.temporada = temporada;
+    public void setLiga(Liga liga) {
+        this.liga = liga;
     }
 
     @Override

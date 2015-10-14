@@ -10,14 +10,14 @@ import java.util.Set;
  * Created by nilpanescoll on 13/10/15.
  */
 @Entity
-public class LigaACB {
+public class Liga {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String nombre;
 
-    @OneToMany (mappedBy = "temporada")
+    @OneToMany (mappedBy = "liga")
     private Set<Temporada> temporadas = new HashSet<>();
 
     public Long getId() {
@@ -46,7 +46,7 @@ public class LigaACB {
 
     @Override
     public String toString() {
-        return "LigaACB{" +
+        return "Liga{" +
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
                 '}';
