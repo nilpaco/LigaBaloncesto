@@ -88,14 +88,88 @@ public class JugadorService {
         jugador6.setNombre("Alex Abrines");
         Calendar cal6=Calendar.getInstance();
         cal6.set(1992, Calendar.JANUARY, 5);
-        Date birthDate6=cal.getTime();
-        jugador6.setFechaNacimiento(birthDate);
-        jugador6.setPosicion("Alero");
+        Date birthDate6=cal6.getTime();
+        jugador6.setFechaNacimiento(birthDate6);
+        jugador6.setPosicion("Escolta");
         jugador6.setCanastas(183);
         jugador6.setAsistencias(50);
         jugador6.setRebotes(29);
         jugadorRepository.save(jugador6);
 
+        Jugador jugador7 = new Jugador();
+        jugador7.setNombre("Gustavo Ayon");
+        Calendar cal7=Calendar.getInstance();
+        Date birthDate7=cal7.getTime();
+        jugador7.setFechaNacimiento(birthDate7);
+        jugador7.setPosicion("Pivot");
+        jugador7.setCanastas(231);
+        jugador7.setRebotes(342);
+        jugadorRepository.save(jugador7);
+
+        Jugador jugador8 = new Jugador();
+        jugador8.setNombre("James Feldeine");
+        Calendar cal8=Calendar.getInstance();
+        Date birthDate8=cal8.getTime();
+        jugador8.setFechaNacimiento(birthDate8);
+        jugador8.setCanastas(274);
+        jugador8.setRebotes(174);
+        jugadorRepository.save(jugador8);
+
+        //cambiar nombres
+
+        Jugador jugador9 = new Jugador();
+        jugador9.setNombre("James Feldeine");
+        Calendar cal9=Calendar.getInstance();
+        Date birthDate9=cal9.getTime();
+        jugador9.setFechaNacimiento(birthDate9);
+        jugador9.setCanastas(274);
+        jugador9.setRebotes(174);
+        jugadorRepository.save(jugador9);
+
+        Jugador jugador10 = new Jugador();
+        jugador10.setNombre("James Feldeine");
+        Calendar cal10=Calendar.getInstance();
+        Date birthDate10=cal10.getTime();
+        jugador10.setFechaNacimiento(birthDate10);
+        jugador10.setCanastas(274);
+        jugador10.setRebotes(174);
+        jugadorRepository.save(jugador10);
+
+        Jugador jugador11 = new Jugador();
+        jugador11.setNombre("James Feldeine");
+        Calendar cal11=Calendar.getInstance();
+        Date birthDate11=cal11.getTime();
+        jugador11.setFechaNacimiento(birthDate11);
+        jugador11.setCanastas(274);
+        jugador11.setRebotes(174);
+        jugadorRepository.save(jugador11);
+
+        Jugador jugador12 = new Jugador();
+        jugador12.setNombre("James Feldeine");
+        Calendar cal12=Calendar.getInstance();
+        Date birthDate12=cal12.getTime();
+        jugador12.setFechaNacimiento(birthDate12);
+        jugador12.setCanastas(274);
+        jugador12.setRebotes(174);
+        jugadorRepository.save(jugador12);
+
+        Jugador jugador13 = new Jugador();
+        jugador13.setNombre("James Feldeine");
+        Calendar cal13=Calendar.getInstance();
+        Date birthDate13=cal13.getTime();
+        jugador13.setFechaNacimiento(birthDate13);
+        jugador13.setCanastas(274);
+        jugador13.setRebotes(174);
+        jugadorRepository.save(jugador13);
+
+        Jugador jugador14 = new Jugador();
+        jugador14.setNombre("James Feldeine");
+        Calendar cal14=Calendar.getInstance();
+        Date birthDate14=cal14.getTime();
+        jugador14.setFechaNacimiento(birthDate14);
+        jugador14.setCanastas(274);
+        jugador14.setRebotes(174);
+        jugadorRepository.save(jugador14);
 
         System.out.println(jugadorRepository.findByNombreContaining("Carlos"));
         System.out.println(jugadorRepository.findByCanastasGreaterThanEqual(511));

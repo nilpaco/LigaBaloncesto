@@ -77,12 +77,25 @@ public class EquipoService {
         Jugador jugador2 = jugadorRepository.findByNombre("Alex Abrines");
         jugador2.setEquipo(equipo1);
         jugadorRepository.save(jugador2);
+        Jugador jugador3 = jugadorRepository.findByNombre("Pau Gasol");
+        jugador3.setEquipo(equipo1);
+        jugadorRepository.save(jugador3);
+        Jugador jugador4 = jugadorRepository.findByNombre("Carlos Arroyo");
+        jugador4.setEquipo(equipo1);
+        jugadorRepository.save(jugador4);
+        Jugador jugador5 = jugadorRepository.findByNombre("Juan Carlos Navarro");
+        jugador5.setEquipo(equipo1);
+        jugadorRepository.save(jugador5);
+        Jugador jugador6 = jugadorRepository.findByNombre("Ante Tomic");
+        jugador6.setEquipo(equipo1);
+        jugadorRepository.save(jugador6);
+
 
         System.out.println("Mostrar jugador: ");
         System.out.println(jugadorRepository.findByEquipoNombre("Barcelona"));
         System.out.println("Mostrar jugador: ");
         System.out.println(jugadorRepository.findByEquipoNombreAndPosicion("Barcelona", "Alero"));
-        System.out.println(jugadorRepository.findTopByOrderByCanastasDescByEquipo("Barcelona"));
+        //System.out.println(jugadorRepository.findByEquipoNombreAndTopByOrderByCanastasDesc("Barcelona"));
 
 
     }

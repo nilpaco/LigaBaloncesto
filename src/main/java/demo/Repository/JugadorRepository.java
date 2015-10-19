@@ -21,5 +21,5 @@ public interface JugadorRepository extends PagingAndSortingRepository<Jugador, L
     public List<Jugador> findByEquipoNombreAndPosicion(String nombre, String posicion);
     public Jugador findTopByOrderByCanastasDesc();
     public List<Jugador> findFirst5ByOrderByAsistenciasDesc();
-    public Jugador findTopByOrderByCanastasDescByEquipo(String nombre);
+    //public Jugador findByEquipoNombreAndTopByOrderByCanastasDesc(String nombre);
 }
