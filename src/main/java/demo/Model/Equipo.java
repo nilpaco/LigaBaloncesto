@@ -18,7 +18,7 @@ public class Equipo {
 
     private String nombre;
 
-    private String loclidad;
+    private String localidad;
 
     private Date fechaCreacion;
 
@@ -44,12 +44,12 @@ public class Equipo {
         this.nombre = nombre;
     }
 
-    public String getLoclidad() {
-        return loclidad;
+    public String getLocalidad() {
+        return localidad;
     }
 
-    public void setLoclidad(String loclidad) {
-        this.loclidad = loclidad;
+    public void setLocalidad(String localidad) {
+        this.localidad = localidad;
     }
 
     public Date getFechaCreacion() {
@@ -81,7 +81,7 @@ public class Equipo {
         return "Equipo{" +
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
-                ", loclidad='" + loclidad + '\'' +
+                ", localidad='" + localidad + '\'' +
                 ", fechaCreacion=" + fechaCreacion +
                 ", jugadores=" + jugadores +
                 '}';

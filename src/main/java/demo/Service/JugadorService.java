@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import javax.xml.bind.SchemaOutputResolver;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -83,6 +84,19 @@ public class JugadorService {
         jugador5.setRebotes(483);
         jugadorRepository.save(jugador5);
 
+        Jugador jugador6 = new Jugador();
+        jugador6.setNombre("Alex Abrines");
+        Calendar cal6=Calendar.getInstance();
+        cal6.set(1992, Calendar.JANUARY, 5);
+        Date birthDate6=cal.getTime();
+        jugador6.setFechaNacimiento(birthDate);
+        jugador6.setPosicion("Alero");
+        jugador6.setCanastas(183);
+        jugador6.setAsistencias(50);
+        jugador6.setRebotes(29);
+        jugadorRepository.save(jugador6);
+
+
         System.out.println(jugadorRepository.findByNombreContaining("Carlos"));
         System.out.println(jugadorRepository.findByCanastasGreaterThanEqual(511));
         List<Jugador> jugadores = jugadorRepository.findByAsistenciasBetween(220, 300);
@@ -99,7 +113,9 @@ public class JugadorService {
         Date calSearch1=calSearch.getTime();
         System.out.println(jugadorRepository.findByFechaNacimientoLessThan(calSearch1));
         System.out.println(jugadorRepository.findByNombreContainingAndFechaNacimientoLessThan("carlos", calSearch1));
-
+        System.out.println("Mostrar jugador numero canastas: ");
+        System.out.println(jugadorRepository.findTopByOrderByCanastasDesc());
+        System.out.println(jugadorRepository.findFirst5ByOrderByAsistenciasDesc());
 
     }
 }
