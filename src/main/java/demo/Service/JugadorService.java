@@ -103,6 +103,7 @@ public class JugadorService {
         jugador7.setFechaNacimiento(birthDate7);
         jugador7.setPosicion("Pivot");
         jugador7.setCanastas(231);
+        jugador7.setAsistencias(28);
         jugador7.setRebotes(342);
         jugadorRepository.save(jugador7);
 
@@ -112,6 +113,7 @@ public class JugadorService {
         Date birthDate8=cal8.getTime();
         jugador8.setFechaNacimiento(birthDate8);
         jugador8.setCanastas(274);
+        jugador8.setAsistencias(83);
         jugador8.setRebotes(174);
         jugadorRepository.save(jugador8);
 
@@ -123,6 +125,7 @@ public class JugadorService {
         Date birthDate9=cal9.getTime();
         jugador9.setFechaNacimiento(birthDate9);
         jugador9.setCanastas(274);
+        jugador9.setAsistencias(132);
         jugador9.setRebotes(174);
         jugadorRepository.save(jugador9);
 
@@ -132,6 +135,7 @@ public class JugadorService {
         Date birthDate10=cal10.getTime();
         jugador10.setFechaNacimiento(birthDate10);
         jugador10.setCanastas(274);
+        jugador10.setAsistencias(28);
         jugador10.setRebotes(174);
         jugadorRepository.save(jugador10);
 
@@ -141,6 +145,7 @@ public class JugadorService {
         Date birthDate11=cal11.getTime();
         jugador11.setFechaNacimiento(birthDate11);
         jugador11.setCanastas(274);
+        jugador11.setAsistencias(28);
         jugador11.setRebotes(174);
         jugadorRepository.save(jugador11);
 
@@ -150,6 +155,7 @@ public class JugadorService {
         Date birthDate12=cal12.getTime();
         jugador12.setFechaNacimiento(birthDate12);
         jugador12.setCanastas(274);
+        jugador12.setAsistencias(28);
         jugador12.setRebotes(174);
         jugadorRepository.save(jugador12);
 
@@ -159,6 +165,7 @@ public class JugadorService {
         Date birthDate13=cal13.getTime();
         jugador13.setFechaNacimiento(birthDate13);
         jugador13.setCanastas(274);
+        jugador13.setAsistencias(28);
         jugador13.setRebotes(174);
         jugadorRepository.save(jugador13);
 
@@ -168,6 +175,7 @@ public class JugadorService {
         Date birthDate14=cal14.getTime();
         jugador14.setFechaNacimiento(birthDate14);
         jugador14.setCanastas(274);
+        jugador14.setAsistencias(28);
         jugador14.setRebotes(174);
         jugadorRepository.save(jugador14);
 

@@ -95,7 +95,8 @@ public class EquipoService {
         System.out.println(jugadorRepository.findByEquipoNombre("Barcelona"));
         System.out.println("Mostrar jugador: ");
         System.out.println(jugadorRepository.findByEquipoNombreAndPosicion("Barcelona", "Alero"));
-        //System.out.println(jugadorRepository.findByEquipoNombreAndTopByOrderByCanastasDesc("Barcelona"));
+        System.out.println("Mostrar jugador 3: ");
+        System.out.println(jugadorRepository.findEmployeeOrderBySalaryFromProject(1L));
 
 
     }
