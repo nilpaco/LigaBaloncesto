@@ -88,7 +88,79 @@ public class EquipoService {
         jugadorRepository.save(jugador5);
         Jugador jugador6 = jugadorRepository.findByNombre("Ante Tomic");
         jugador6.setEquipo(equipo1);
+
         jugadorRepository.save(jugador6);
+        Jugador jugador7 = jugadorRepository.findByNombre("Gustavo Ayon");
+        jugador7.setEquipo(equipo2);
+        jugadorRepository.save(jugador7);
+        Jugador jugador8 = jugadorRepository.findByNombre("Lebron James");
+        jugador8.setEquipo(equipo2);
+        jugadorRepository.save(jugador8);
+        Jugador jugador9 = jugadorRepository.findByNombre("Marc Gasol");
+        jugador9.setEquipo(equipo2);
+        jugadorRepository.save(jugador9);
+        Jugador jugador10 = jugadorRepository.findByNombre("Rudy Fernandez");
+        jugador10.setEquipo(equipo2);
+        jugadorRepository.save(jugador10);
+        Jugador jugador11 = jugadorRepository.findByNombre("Dimitris Diamantidis");
+        jugador11.setEquipo(equipo2);
+
+        jugadorRepository.save(jugador11);
+        Jugador jugador12 = jugadorRepository.findByNombre("Brad Oleson");
+        jugador12.setEquipo(equipo3);
+
+        jugadorRepository.save(jugador12);
+        Jugador jugador13 = jugadorRepository.findByNombre("Serio Llull");
+        jugador13.setEquipo(equipo3);
+        jugadorRepository.save(jugador13);
+        Jugador jugador14 = jugadorRepository.findByNombre("James Feldeine");
+        jugador14.setEquipo(equipo3);
+        jugadorRepository.save(jugador14);
+        Jugador jugador15 = jugadorRepository.findByNombre("Kobe Bryant");
+        jugador15.setEquipo(equipo3);
+        jugadorRepository.save(jugador15);
+        Jugador jugador16 = jugadorRepository.findByNombre("Ricky Rubio");
+        jugador16.setEquipo(equipo3);
+        jugadorRepository.save(jugador16);
+        Jugador jugador17 = jugadorRepository.findByNombre("Yao Ming");
+        jugador17.setEquipo(equipo3);
+        jugadorRepository.save(jugador17);
+
+        Jugador jugador18 = jugadorRepository.findByNombre("Alberto Corbacho");
+        jugador18.setEquipo(equipo4);
+        jugadorRepository.save(jugador18);
+        Jugador jugador19 = jugadorRepository.findByNombre("Pablo Aguilar");
+        jugador19.setEquipo(equipo4);
+        jugadorRepository.save(jugador19);
+        Jugador jugador20 = jugadorRepository.findByNombre("Mirza Teletovic");
+        jugador20.setEquipo(equipo4);
+        jugadorRepository.save(jugador20);
+        Jugador jugador21 = jugadorRepository.findByNombre("Nemanja Bjelica");
+        jugador21.setEquipo(equipo4);
+        jugadorRepository.save(jugador21);
+        Jugador jugador22 = jugadorRepository.findByNombre("Xavi Rabaseda");
+        jugador22.setEquipo(equipo4);
+        jugadorRepository.save(jugador22);
+
+        Jugador jugador23 = jugadorRepository.findByNombre("Sonny Weems");
+        jugador23.setEquipo(equipo5);
+        jugadorRepository.save(jugador23);
+        Jugador jugador24 = jugadorRepository.findByNombre("Aaron Jackson");
+        jugador24.setEquipo(equipo5);
+        jugadorRepository.save(jugador24);
+        Jugador jugador25 = jugadorRepository.findByNombre("Marko Todorovic");
+        jugador25.setEquipo(equipo5);
+        jugadorRepository.save(jugador25);
+        Jugador jugador26 = jugadorRepository.findByNombre("Alexey Shved");
+        jugador26.setEquipo(equipo5);
+        jugadorRepository.save(jugador26);
+
+
+
+
+
+
+
 
 
         System.out.println("Mostrar jugador: ");
