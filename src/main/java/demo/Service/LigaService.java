@@ -31,5 +31,10 @@ public class LigaService {
         temporada.setLiga(liga);
         temporadaRepository.save(temporada);
 
+        Temporada temporada2 = temporadaRepository.findByNombre("Temporada ACB 16/17");
+        temporada2.setLiga(liga);
+        temporadaRepository.save(temporada2);
+
+
     }
 }

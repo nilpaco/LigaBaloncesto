@@ -317,6 +317,17 @@ public class JugadorService {
         jugador26.setRebotes(192);
         jugadorRepository.save(jugador26);
 
+        Jugador jugador27 = new Jugador();
+        jugador27.setNombre("Bojan Dubljevic");
+        Calendar cal27=Calendar.getInstance();
+        cal27.set(1984, Calendar.JUNE, 17);
+        Date birthDate27=cal27.getTime();
+        jugador27.setFechaNacimiento(birthDate27);
+        jugador27.setCanastas(285);
+        jugador27.setAsistencias(251);
+        jugador27.setRebotes(231);
+        jugadorRepository.save(jugador27);
+
 
 
         System.out.println(jugadorRepository.findByNombreContaining("Carlos"));

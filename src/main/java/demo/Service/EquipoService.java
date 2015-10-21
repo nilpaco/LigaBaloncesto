@@ -68,7 +68,7 @@ public class EquipoService {
         Calendar cal5=Calendar.getInstance();
         cal5.set(1934, Calendar.SEPTEMBER, 14);
         Date birthDate5=cal5.getTime();
-        equipo4.setFechaCreacion(birthDate5);
+        equipo5.setFechaCreacion(birthDate5);
         equipoRepository.save(equipo5);
 
         Jugador jugador = jugadorRepository.findByNombre("Kostas Papanikolaou");
@@ -154,14 +154,9 @@ public class EquipoService {
         Jugador jugador26 = jugadorRepository.findByNombre("Alexey Shved");
         jugador26.setEquipo(equipo5);
         jugadorRepository.save(jugador26);
-
-
-
-
-
-
-
-
+        Jugador jugador27 = jugadorRepository.findByNombre("Bojan Dubljevic");
+        jugador27.setEquipo(equipo5);
+        jugadorRepository.save(jugador27);
 
         System.out.println("Mostrar jugador: ");
         System.out.println(jugadorRepository.findByEquipoNombre("Barcelona"));
