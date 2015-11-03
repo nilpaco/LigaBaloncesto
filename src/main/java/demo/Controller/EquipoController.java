@@ -22,7 +22,7 @@ public class EquipoController {
     @Autowired
     private EquipoRepository equipoRepository;
 
-    @RequestMapping(method = RequestMethod.DELETE.POST)
+    @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
     public Equipo save(@RequestBody Equipo equipo){
         return equipoRepository.save(equipo);
