@@ -39,13 +39,14 @@ public class JugadorController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public void deleteById(@PathVariable Long id){
+    public void deleteById(@PathVariable Long id) {
         Jugador jugador = jugadorRepository.findOne(id);
 
         if(jugador == null){throw new JugadorException(id);}
 
         jugadorRepository.delete(id);
     }
+
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public Jugador getById(@PathVariable Long id){

@@ -16,7 +16,7 @@ import java.util.List;
  */
 
 @RestController
-@RequestMapping("/equipo")
+@RequestMapping("/equipos")
 public class EquipoController {
 
     @Autowired
@@ -40,21 +40,21 @@ public class EquipoController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public void deleteById(@PathVariable Long id){
-        Equipo jugador = equipoRepository.findOne(id);
+    public void deleteById(@PathVariable Long id) {
+        Equipo equipo = equipoRepository.findOne(id);
 
-        if(jugador == null){throw new EquipoException(id);}
+        if(equipo == null){throw new EquipoException(id);}
 
         equipoRepository.delete(id);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public Equipo getById(@PathVariable Long id){
-        Equipo jugador = equipoRepository.findOne(id);
+        Equipo equipo = equipoRepository.findOne(id);
 
-        if(jugador == null){throw new EquipoException(id);}
+        if(equipo == null){throw new EquipoException(id);}
 
-        return jugador;
+        return equipo;
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)

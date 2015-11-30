@@ -25,7 +25,7 @@ public class Equipo {
     private Date fechaCreacion;
 
     @JsonIgnore
-    @OneToMany (mappedBy = "equipo")
+    @OneToMany (mappedBy = "equipo", orphanRemoval=true)
     private Set<Jugador> jugadores = new HashSet<>();
 
     @JsonIgnore
